@@ -1,0 +1,7 @@
+order:
+  host: localhost
+  port: 8081
+events:
+  host: localhost
+  port: 5672
+  topicName: events-topic
