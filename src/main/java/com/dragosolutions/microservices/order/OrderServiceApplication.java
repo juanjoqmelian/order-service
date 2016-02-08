@@ -49,7 +49,7 @@ public class OrderServiceApplication extends Application<ApplicationConfiguratio
 
         final OrderServiceConfiguration configuration = applicationConfiguration.getOrder();
 
-        final OrderResource personService = new OrderResource(applicationConfiguration.getCustomer());
+        final OrderResource personService = new OrderResource(applicationConfiguration.getEvents());
         environment.jersey().register(personService);
 
 

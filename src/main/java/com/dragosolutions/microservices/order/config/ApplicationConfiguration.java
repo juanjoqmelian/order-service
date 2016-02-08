@@ -11,7 +11,7 @@ public class ApplicationConfiguration extends Configuration {
     private OrderServiceConfiguration order;
 
     @Valid
-    private EventExchangeConfiguration customer;
+    private EventExchangeConfiguration events;
 
 
     public OrderServiceConfiguration getOrder() {
@@ -22,11 +22,11 @@ public class ApplicationConfiguration extends Configuration {
         this.order = order;
     }
 
-    public EventExchangeConfiguration getCustomer() {
-        return customer;
+    public EventExchangeConfiguration getEvents() {
+        return events;
     }
 
-    public void setCustomer(EventExchangeConfiguration customer) {
-        this.customer = customer;
+    public void setEvents(EventExchangeConfiguration events) {
+        this.events = events;
     }
 }
